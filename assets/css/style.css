@@ -1,0 +1,233 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+body
+{
+    background: #1B1B1B;
+}
+
+maintext
+{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 4em;
+    font-family: 'Ubuntu Mono', monospace;
+    color: inherit;
+}
+
+.white
+{
+    margin: 0;
+    font-size: 10;
+    font-family: 'Ubuntu Mono', monospace;
+    color: white;
+}
+
+.error
+{
+    margin: 0;
+    font-size: 10;
+    font-family: 'Ubuntu Mono', monospace;
+    color: red;
+}
+
+.success
+{
+    margin: 0;
+    font-size: 10;
+    font-family: 'Ubuntu Mono', monospace;
+    color: rgb(0, 255, 0);
+}
+
+.button
+{
+    border-radius: 10px;
+    background-color: rgb(30, 30, 255);
+    border: 2px solid blue;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: arial;
+}
+
+.button:hover {
+    color: lightgray;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  color: #f1f1f1;
+  width: 100%;
+  text-align: center;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.contain {
+	display: flex;
+	justify-content: center;
+}
+#capt {
+	width: 75px;
+	height: 25px;
+	font-size: 17px;
+	background-color: lightgray;
+	padding: 5px;
+	border: none;
+	letter-spacing: 1px;
+	float: left;
+	color: black;
+	border-radius: 5px 0 0 5px;
+  font-family: 'Ubuntu Mono', monospace;
+}
+#refresh {
+	float: left;
+	background-color: lightgray;
+	height: 35px;
+	border-radius: 0 5px 5px 0;
+}
+#refresh img {
+	margin-top: 10px;
+	cursor: pointer;
+}
+#textinput {
+	width: 75px;
+	height: 25px;
+	font-size: 17px;
+	background-color: #252521;
+	border: none;
+	margin-left: 10px;
+	border-radius: 5px;
+	padding: 5px;
+	color: white;
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+.loader_bg{
+  position: fixed;
+  z-index: 999999;
+  background: #1B1B1B;
+  width: 100%;
+  height: 100%;
+}
+.loader{
+  border: 0 solid transparent;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: calc(50vh - 75px);
+  left: calc(50vw - 75px);
+}
+.loader:before, .loader:after{
+  content: '';
+  border: 1em solid white;
+  border-radius: 50%;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: loader 2s linear infinite;
+  opacity: 0;
+}
+.loader:before{
+  animation-delay: .5s;
+}
+@keyframes loader{
+  0%{
+      transform: scale(0);
+      opacity: 0;
+  }
+  50%{
+      opacity: 1;
+  }
+  100%{
+      transform: scale(1);
+      opacity: 0;
+  }
+}
+
+.rainbow {
+
+    /* Font options */
+    font-family: 'Ubuntu Mono', cursive;
+    text-shadow: 2px 2px 4px #000000;
+
+    /* Chrome, Safari, Opera */
+    -webkit-animation: rainbow 5s infinite;
+
+    /* Internet Explorer */
+    -ms-animation: rainbow 5s infinite;
+
+    /* Standar Syntax */
+    animation: rainbow 5s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rainbow{
+    0%{color: orange;}
+    10%{color: purple;}
+    20%{color: red;}
+    30%{color: CadetBlue;}
+    40%{color: yellow;}
+    50%{color: coral;}
+    60%{color: green;}
+    70%{color: cyan;}
+    80%{color: DeepPink;}
+    90%{color: DodgerBlue;}
+    100%{color: orange;}
+}
+
+/* Internet Explorer */
+@-ms-keyframes rainbow{
+    0%{color: orange;}
+    10%{color: purple;}
+    20%{color: red;}
+    30%{color: CadetBlue;}
+    40%{color: yellow;}
+    50%{color: coral;}
+    60%{color: green;}
+    70%{color: cyan;}
+    80%{color: DeepPink;}
+    90%{color: DodgerBlue;}
+    100%{color: orange;}
+}
+
+/* Standar Syntax */
+@keyframes rainbow{
+    0%{color: orange;}
+    10%{color: purple;}
+    20%{color: red;}
+    30%{color: CadetBlue;}
+    40%{color: yellow;}
+    50%{color: coral;}
+    60%{color: green;}
+    70%{color: cyan;}
+    80%{color: DeepPink;}
+    90%{color: DodgerBlue;}
+    100%{color: orange;}
+}
